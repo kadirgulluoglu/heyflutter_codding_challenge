@@ -5,9 +5,14 @@ class CustomButton extends StatelessWidget {
   final IconData? icon;
   final String text;
   final VoidCallback? onPressed;
+  final BorderRadiusGeometry? borderRadius;
 
   const CustomButton(
-      {super.key, this.icon, required this.text, this.onPressed});
+      {super.key,
+      this.icon,
+      required this.text,
+      this.onPressed,
+      this.borderRadius});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +21,7 @@ class CustomButton extends StatelessWidget {
         backgroundColor: context.colors.primary,
         foregroundColor: context.colors.onPrimary,
         shape: RoundedRectangleBorder(
-          borderRadius: context.containerRadius,
+          borderRadius: borderRadius ?? context.containerRadius,
         ),
       ),
       onPressed: onPressed,

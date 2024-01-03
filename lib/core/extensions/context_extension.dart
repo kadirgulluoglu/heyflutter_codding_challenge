@@ -117,6 +117,7 @@ extension BlurExtension on BuildContext {
 
 extension RadiusExtension on BuildContext {
   BorderRadius get containerRadius => BorderRadius.circular(10);
+  BorderRadius get normalRadius => BorderRadius.circular(30);
 
   BorderRadius get radiusTopLeftTopRight30 => const BorderRadius.only(
         topLeft: Radius.circular(30),

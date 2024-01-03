@@ -1,4 +1,6 @@
 enum AssetsEnum {
+  houseTwo('house_two'),
+  houseOne('house_one'),
   onboardingImage('onboarding_image'),
   logo('logo');
 

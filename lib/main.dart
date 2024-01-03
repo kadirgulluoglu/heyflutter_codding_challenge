@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: ApplicationConstants.appName,
       theme: AppThemeLight.instance.theme,
+      debugShowCheckedModeBanner: false,
       home: const OnboardingView(),
     );
   }
